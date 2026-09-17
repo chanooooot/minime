@@ -79,7 +79,7 @@ button {
   bottom: 0;
   width: min(36%, 340px);
   aspect-ratio: 116 / 178;
-  background: url("assets/minime.png") 0.584% 42.85% / 1872.414% auto no-repeat;
+  background: url("assets/minime.png") 0 62.5% / 820% auto no-repeat;
   filter: drop-shadow(0 24px 28px rgba(28, 30, 33, 0.16));
 }
 
