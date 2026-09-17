@@ -81,6 +81,7 @@ button {
   aspect-ratio: 116 / 178;
   background: url("assets/minime.png") 0 62.5% / 820% auto no-repeat;
   filter: drop-shadow(0 24px 28px rgba(28, 30, 33, 0.16));
+  animation: mascot-bob 2.8s ease-in-out infinite;
 }
 
 .actions {
@@ -144,6 +145,11 @@ button {
   text-align: center;
 }
 
+@keyframes mascot-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
 @media (max-width: 700px) {
   .stage {
     padding: 20px;
@@ -173,11 +179,17 @@ button {
     bottom: -1%;
     width: min(85%, 380px);
     transform: translateX(50%);
+    animation-name: mascot-bob-mobile;
   }
 
   .actions {
     padding-top: 8px;
   }
+}
+
+@keyframes mascot-bob-mobile {
+  0%, 100% { transform: translateX(50%) translateY(0); }
+  50% { transform: translateX(50%) translateY(-12px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
