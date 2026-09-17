@@ -81,7 +81,7 @@ button {
   aspect-ratio: 1;
   background: url("assets/minime.png") 0 0 / 400% 400% no-repeat;
   filter: drop-shadow(0 24px 28px rgba(28, 30, 33, 0.16));
-  animation: mascot-sprite 3.2s steps(1) infinite;
+  animation: mascot-sprite 1.2s steps(1) infinite;
 }
 
 .actions {
@@ -146,22 +146,10 @@ button {
 }
 
 @keyframes mascot-sprite {
-  0%, 6.24% { background-position: 0 0; }
-  6.25%, 12.49% { background-position: 33.333% 0; }
-  12.5%, 18.74% { background-position: 66.667% 0; }
-  18.75%, 24.99% { background-position: 100% 0; }
-  25%, 31.24% { background-position: 0 33.333%; }
-  31.25%, 37.49% { background-position: 33.333% 33.333%; }
-  37.5%, 43.74% { background-position: 66.667% 33.333%; }
-  43.75%, 49.99% { background-position: 100% 33.333%; }
-  50%, 56.24% { background-position: 0 66.667%; }
-  56.25%, 62.49% { background-position: 33.333% 66.667%; }
-  62.5%, 68.74% { background-position: 66.667% 66.667%; }
-  68.75%, 74.99% { background-position: 100% 66.667%; }
-  75%, 81.24% { background-position: 0 100%; }
-  81.25%, 87.49% { background-position: 33.333% 100%; }
-  87.5%, 93.74% { background-position: 66.667% 100%; }
-  93.75%, 100% { background-position: 100% 100%; }
+  0%, 24.99% { background-position: 0 0; }
+  25%, 49.99% { background-position: 33.333% 0; }
+  50%, 74.99% { background-position: 66.667% 0; }
+  75%, 100% { background-position: 100% 0; }
 }
 
 @media (max-width: 700px) {
@@ -193,7 +181,7 @@ button {
     bottom: -1%;
     width: min(100%, 460px);
     transform: translateX(50%);
-    animation: mascot-sprite 3.2s steps(1) infinite;
+    animation: mascot-sprite 1.2s steps(1) infinite;
   }
 
   .actions {
