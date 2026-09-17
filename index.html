@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="A small pirate-adventure mascot page.">
+    <title>minime</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="stage">
+      <section class="mascot-scene" aria-label="minime mascot">
+        <div class="speech-bubble" aria-live="polite">
+          <p id="message">Every great adventure starts with one small wave.</p>
+        </div>
+        <img class="mascot" src="assets/mascot-placeholder.png" alt="A cheerful pirate-adventure mascot waving" width="1224" height="1285">
+      </section>
+
+      <div class="actions" aria-label="Page actions">
+        <button class="button button-primary" id="talkButton" type="button">Talk</button>
+        <button class="button button-secondary" id="shareButton" type="button">Share</button>
+      </div>
+      <p class="status" id="shareStatus" role="status"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
