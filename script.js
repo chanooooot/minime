@@ -1,14 +1,14 @@
 const messages = [
-  "Every great adventure starts with one small wave.",
-  "The sea looks wide. Good. More room for dreams.",
-  "Treasure map? I call it a to-do list with sparkle.",
-  "Today feels perfect for chasing a new horizon.",
-  "Crew rule one: bring snacks for the journey.",
-  "A brave heart fits in even the smallest sailor.",
-  "The best stories begin with: what if we sail?",
-  "Keep your compass kind and your curiosity loud.",
-  "New islands, same tiny captain energy.",
-  "The wind says hello. I say hello back."
+  "Cue the music. The adventure starts now.",
+  "Every hero needs a map. Mine has snack stops.",
+  "The horizon is calling. Let’s make a dramatic entrance.",
+  "Plot twist: the treasure was the friends we made at sea.",
+  "Bravery looks good on everyone, especially tiny captains.",
+  "No storm can ruin a day with a great soundtrack.",
+  "The next scene needs one brave first step.",
+  "Adventure is just curiosity wearing a cape.",
+  "Somewhere, a narrator is saying this is our moment.",
+  "Roll credits later. There’s still wonder to find."
 ];
 
 const message = document.querySelector("#message");
