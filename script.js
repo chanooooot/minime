@@ -43,8 +43,9 @@ async function copyCurrentUrl() {
   input.style.opacity = "0";
   document.body.append(input);
   input.select();
-  document.execCommand("copy");
+  const copied = document.execCommand("copy");
   input.remove();
+  if (!copied) throw new Error("Copy failed.");
 }
 
 talkButton.addEventListener("click", () => {

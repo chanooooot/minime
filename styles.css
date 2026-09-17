@@ -23,27 +23,28 @@ button {
 }
 
 .stage {
-  position: relative;
   display: grid;
-  grid-template-rows: 1fr auto auto;
-  min-height: 100vh;
+  grid-template-rows: 1fr auto;
+  min-height: 100dvh;
   padding: clamp(20px, 3vw, 40px);
-  overflow: hidden;
 }
 
 .mascot-scene {
-  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 530px) minmax(180px, 340px) 112px;
+  grid-template-rows: auto auto;
+  gap: clamp(20px, 4vw, 56px);
+  align-items: center;
   width: min(100%, 1120px);
-  min-height: clamp(460px, 65vh, 560px);
   margin: auto;
+  padding-block: clamp(24px, 7vh, 72px);
 }
 
 .speech-bubble {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 14%;
-  left: 4%;
-  width: min(52%, 530px);
+  grid-column: 1 / 3;
+  width: min(100%, 530px);
   padding: clamp(28px, 4vw, 52px);
   border: 1px solid #dee3e9;
   border-radius: 40px;
@@ -76,10 +77,10 @@ button {
 }
 
 .mascot {
-  position: absolute;
-  right: 16%;
-  bottom: 0;
-  width: min(36%, 340px);
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  max-width: 340px;
   aspect-ratio: 1;
   background: url("assets/minime.png") 0 0 / 400% 400% no-repeat;
   filter: drop-shadow(0 24px 28px rgba(28, 30, 33, 0.16));
@@ -88,20 +89,12 @@ button {
 
 .actions {
   display: flex;
+  grid-column: 3;
+  grid-row: 2;
+  align-items: stretch;
   justify-content: center;
   gap: 12px;
-  padding-top: 16px;
-}
-
-@media (min-width: 900px) {
-  .actions {
-    position: absolute;
-    top: 50%;
-    right: clamp(140px, 13vw, 200px);
-    flex-direction: column;
-    padding: 0;
-    transform: translateY(-50%);
-  }
+  flex-direction: column;
 }
 
 .button {
@@ -170,13 +163,16 @@ button {
   }
 
   .mascot-scene {
-    min-height: 650px;
+    grid-template-columns: minmax(0, 1fr) 112px;
+    grid-template-rows: auto auto;
+    gap: 18px 16px;
+    width: 100%;
+    padding-block: 24px;
   }
 
   .speech-bubble {
-    top: 4%;
-    left: 0;
-    width: min(350px, calc(100vw - 40px));
+    grid-column: 1 / -1;
+    width: min(100%, 350px);
     border-radius: 32px;
   }
 
@@ -185,37 +181,19 @@ button {
   }
 
   .speech-bubble::after {
-    right: 25%;
+    right: auto;
+    left: 28%;
   }
 
   .mascot {
-    right: auto;
-    bottom: 38%;
-    left: 0;
-    width: min(55%, 240px);
+    grid-column: 1;
+    width: 100%;
+    max-width: 240px;
   }
 
   .actions {
-    padding-top: 8px;
-  }
-}
-
-@media (max-width: 899px) {
-  .actions {
-    position: fixed;
-    top: 55%;
-    right: 20px;
-    left: auto;
+    grid-column: 2;
     width: 112px;
-    flex-direction: column;
-    padding: 0;
-    transform: translateY(-50%);
-  }
-}
-
-@media (max-width: 700px) {
-  .actions {
-    top: 46%;
   }
 }
 

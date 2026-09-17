@@ -7,7 +7,7 @@ This repository hosts the static `minime` GitHub Pages site. Keep the page inten
 - `index.html` holds semantic page structure.
 - `styles.css` holds responsive presentation.
 - `script.js` holds only client-side interactions: random bubble text and sharing.
-- `assets/` holds committed site media. The mascot belongs at `assets/mascot.apng`.
+- `assets/` holds committed site media. The mascot sprite belongs at `assets/minime.png`.
 
 Do not introduce a framework, build directory, or package manifest unless the page needs a capability that plain browser APIs cannot provide.
 
