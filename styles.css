@@ -190,7 +190,7 @@ button {
 
   .mascot {
     right: auto;
-    bottom: -1%;
+    bottom: 38%;
     left: 0;
     width: min(55%, 240px);
   }
@@ -210,6 +210,12 @@ button {
     flex-direction: column;
     padding: 0;
     transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 700px) {
+  .actions {
+    top: 46%;
   }
 }
 
