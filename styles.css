@@ -78,10 +78,10 @@ button {
   right: 10%;
   bottom: 0;
   width: min(36%, 340px);
-  aspect-ratio: 116 / 178;
-  background: url("assets/minime.png") 0 62% / 800% auto no-repeat;
+  aspect-ratio: 1;
+  background: url("assets/minime.png") 0 0 / 400% 400% no-repeat;
   filter: drop-shadow(0 24px 28px rgba(28, 30, 33, 0.16));
-  animation: mascot-sprite 1.6s steps(7) infinite;
+  animation: mascot-sprite 1.2s steps(3) infinite;
 }
 
 .actions {
@@ -146,7 +146,7 @@ button {
 }
 
 @keyframes mascot-sprite {
-  to { background-position: 100% 62%; }
+  to { background-position: 100% 0; }
 }
 
 @media (max-width: 700px) {
