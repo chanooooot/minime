@@ -10,9 +10,12 @@ const messages = [
 ];
 
 const message = document.querySelector("#message");
+const speechBubble = document.querySelector(".speech-bubble");
 const talkButton = document.querySelector("#talkButton");
 const shareButton = document.querySelector("#shareButton");
 const shareStatus = document.querySelector("#shareStatus");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+let bubbleShake;
 
 console.assert(messages.length > 1, "Talk needs at least two messages.");
 
@@ -26,6 +29,21 @@ function setStatus(text) {
   window.setTimeout(() => {
     if (shareStatus.textContent === text) shareStatus.textContent = "";
   }, 2400);
+}
+
+function shakeBubble() {
+  if (reducedMotion.matches) return;
+
+  bubbleShake?.cancel();
+  bubbleShake = speechBubble.animate(
+    [
+      { transform: "translateX(0)" },
+      { transform: "translateX(-4px)" },
+      { transform: "translateX(4px)" },
+      { transform: "translateX(0)" }
+    ],
+    { duration: 180, easing: "cubic-bezier(0.77, 0, 0.175, 1)" }
+  );
 }
 
 async function copyCurrentUrl() {
@@ -50,6 +68,7 @@ async function copyCurrentUrl() {
 
 talkButton.addEventListener("click", () => {
   message.textContent = pickNextMessage(message.textContent);
+  shakeBubble();
 });
 
 shareButton.addEventListener("click", async () => {
