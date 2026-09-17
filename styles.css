@@ -77,11 +77,10 @@ button {
   position: absolute;
   right: -3%;
   bottom: -6%;
-  width: min(51%, 560px);
-  aspect-ratio: 1;
-  background: url("assets/minime.png") 0 0 / 400% 400% no-repeat;
+  width: min(40%, 400px);
+  aspect-ratio: 116 / 178;
+  background: url("assets/minime.png") 0.584% 42.85% / 1872.414% auto no-repeat;
   filter: drop-shadow(0 24px 28px rgba(28, 30, 33, 0.16));
-  animation: mascot-sprite 1.2s steps(1) infinite;
 }
 
 .actions {
@@ -145,13 +144,6 @@ button {
   text-align: center;
 }
 
-@keyframes mascot-sprite {
-  0%, 24.99% { background-position: 0 0; }
-  25%, 49.99% { background-position: 33.333% 0; }
-  50%, 74.99% { background-position: 66.667% 0; }
-  75%, 100% { background-position: 100% 0; }
-}
-
 @media (max-width: 700px) {
   .stage {
     padding: 20px;
@@ -179,9 +171,8 @@ button {
   .mascot {
     right: 50%;
     bottom: -1%;
-    width: min(100%, 460px);
+    width: min(85%, 380px);
     transform: translateX(50%);
-    animation: mascot-sprite 1.2s steps(1) infinite;
   }
 
   .actions {
