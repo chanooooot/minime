@@ -38,11 +38,11 @@ function shakeBubble() {
   bubbleShake = speechBubble.animate(
     [
       { transform: "translateX(0)" },
-      { transform: "translateX(-4px)" },
-      { transform: "translateX(4px)" },
+      { transform: "translateX(-6px)" },
+      { transform: "translateX(6px)" },
       { transform: "translateX(0)" }
     ],
-    { duration: 180, easing: "cubic-bezier(0.77, 0, 0.175, 1)" }
+    { duration: 200, easing: "cubic-bezier(0.77, 0, 0.175, 1)" }
   );
 }
 
