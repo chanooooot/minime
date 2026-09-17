@@ -25,14 +25,14 @@ button {
   display: grid;
   grid-template-rows: 1fr auto auto;
   min-height: 100vh;
-  padding: clamp(24px, 5vw, 72px);
+  padding: clamp(20px, 3vw, 40px);
   overflow: hidden;
 }
 
 .mascot-scene {
   position: relative;
   width: min(100%, 1120px);
-  min-height: 560px;
+  min-height: clamp(460px, 65vh, 560px);
   margin: auto;
 }
 
@@ -75,9 +75,9 @@ button {
 
 .mascot {
   position: absolute;
-  right: -3%;
-  bottom: -6%;
-  width: min(40%, 400px);
+  right: 10%;
+  bottom: 0;
+  width: min(36%, 340px);
   aspect-ratio: 116 / 178;
   background: url("assets/minime.png") 0.584% 42.85% / 1872.414% auto no-repeat;
   filter: drop-shadow(0 24px 28px rgba(28, 30, 33, 0.16));
