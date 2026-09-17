@@ -1,14 +1,12 @@
 const messages = [
-  "Cue the music. The adventure starts now.",
-  "Every hero needs a map. Mine has snack stops.",
-  "The horizon is calling. Let’s make a dramatic entrance.",
-  "Plot twist: the treasure was the friends we made at sea.",
-  "Bravery looks good on everyone, especially tiny captains.",
-  "No storm can ruin a day with a great soundtrack.",
-  "The next scene needs one brave first step.",
-  "Adventure is just curiosity wearing a cape.",
-  "Somewhere, a narrator is saying this is our moment.",
-  "Roll credits later. There’s still wonder to find."
+  "กกต.หค.",
+  "อหต.",
+  "อหน.",
+  "สั่งฟ้อง 229",
+  "ร่างรัฐธรรมนูญใหม่ !",
+  "ปล่อยทนายอานนท์ !",
+  "ปล่อยเพื่อนเรา !",
+  "อย่าลืม 6 ตุลา !"
 ];
 
 const message = document.querySelector("#message");
